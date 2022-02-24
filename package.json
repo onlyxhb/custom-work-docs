@@ -1,0 +1,22 @@
+{
+  "name": "custom-work-docs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "yarn run dumi dev --port=8888",
+    "start": "yarn run dev",
+    "lint:md": "lint-md *.md",
+    "lint:fix": "lint-md *.md --fix",
+    "build": "yarn run dumi build",
+    "deploy": "gh-pages -d docs-dist",
+    "clean": "gh-pages-clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dumi": "^1.1.18",
+    "gh-pages": "^3.0.0"
+  }
+}
+
