@@ -3,10 +3,10 @@ nav:
   title: duiba-dev-new
   order: 1
 group:
-  title: 基础组件
-  order: 3
+  title: 高级组件
+  order: 4
 title: FormDialog弹窗
-order: 14
+order: 1
 ---
 
 # db-form-dialog
@@ -145,5 +145,35 @@ order: 14
 
 参数|说明|类型|可选值|默认值
 :---:|:--:|:---:|:---:|:---:
-visible|是否显示|Boolean|-|false
-title|标题|String|-|-
+visible|	控制是否显示|	boolean|	true/false|	-
+value/v-model|	等同vsible|	boolean|	true/false|	-
+title|	弹窗标题|	string|	-|	添加
+width|	弹窗宽度|	string|	-|	450px
+labelWidth|	表单的标签(label)宽度|	string|	-|	120px
+cancelButtonText|	取消按钮文案|	string|	-|	取 消
+confirmButtonText	确认按钮文案	string	-|	确 定
+formInitData|	表单初始值|	object|	-|	{}
+formConfig|	表单配置项|	array|	-|	[]
+autoPlaceholder|	根据配置项的label自动截取placeholder|	boolean|	true/false|	-
+modal|	是否显示遮罩层|	boolean|	true/false|	true
+
+
+## formConfig
+
+参数|说明|类型|可选值|默认值
+:---:|:--:|:---:|:---:|:---:
+label|	表单标签|	string|	——|	——
+prop|	表单域 model 字段，在使用 validate、resetFields 方法的情况下，该属性是必填的|	string|	——|	——
+rules|	表单验证规则，具体规则见element-ui中form组件说明|	object|	array|	——
+show|	表单项显示控制函数，无时默认显示，参数为表单值集合|	funtion|	——|	——
+type|	组件类型，具体见[dynamic-component](/duiba-dev-new/advanced/dynamic-component)|	string|	——|	——
+
+
+## slot
+
+插槽名称|说明
+:---:|:--:
+tips|	顶部文案显示区域
+默认插槽|	表单项
+foooter|	底部按钮显示控制
+

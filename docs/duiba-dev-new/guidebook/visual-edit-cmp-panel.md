@@ -5,7 +5,7 @@ nav:
 group:
   title: 开发指南
   order: 2
-title: 可视化组件配置面板说明文档
+title: 可视化组件配置面板
 order: 5
 ---
 

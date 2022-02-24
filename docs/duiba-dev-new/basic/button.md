@@ -13,7 +13,7 @@ order: 2
 
 按钮组件，常用的操作按钮
 
-组件源码： [https://gitlab2.dui88.com/frontend/duiba-dev-new/blob/master/refactor/dev-new-refactor/src/components/basic/components/button/button.vue](https://gitlab2.dui88.com/frontend/duiba-dev-new/blob/master/refactor/dev-new-refactor/src/components/basic/components/button/button.vue)
+组件源码： [http://gitlab2.dui88.com/frontend/duiba-dev-new/blob/master/refactor/dev-new-refactor/src/components/basic/components/button/button.vue](http://gitlab2.dui88.com/frontend/duiba-dev-new/blob/master/refactor/dev-new-refactor/src/components/basic/components/button/button.vue)
 
 ### 基础用法
 
