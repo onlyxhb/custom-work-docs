@@ -9,6 +9,7 @@ export default defineConfig({
   mode: 'site',
   base: '/custom-work-docs/',
   publicPath: '/custom-work-docs/',
+  styles: [`.markdown a.beian { color: #b0b1ba; }`, `.markdown a.beian svg { display: none; }`],
   resolve: {
     includes: ['docs'],
     excludes: [],
