@@ -153,12 +153,21 @@ order: 1
 
 ## 补充
 
-- 约定式路由，目录嗅探, 最多支持3层
+- 参考约定式路由，目录嗅探, 最多支持3层，具体逻辑见 `loadCmps.js`
+磁盘路径 | 挂载组件名 |
+--- | --- |
+zjqc/index.vue      | zjqcIndex |
+zjqc/hello.vue      | zjqcHello |
+zjqc/components/demo.vue  |   zjqcDemo |
+zjqc/components/demo/index.vue   |  zjqcDemo |
+zjqc/components/demo/test.vue  |   zjqcTest |
+
 
 - 全局组件的使用
 
   ```html
   <component :is="comps.bottomMsg || 'bottomMsg'" />
+  // 这里组件的命名方式统一为驼峰命名，其他方式无法正确使用
   ```
 - 定制模块
   - 只定制入口页面
@@ -166,11 +175,19 @@ order: 1
   - 只定制组件
   - 只定制某个组件的子组件，例如 `countDown`
 
+- 入口主页面的其他位置需要添加逻辑，可以留空
+
+- 商品内容区组件里，3块代码基本相同，可以抽离成配置
+
 - 样式的隔离，每个定制组件样式都是用`scoped`
 
-- 参考部分文档的语言切换
+#### 另外，可参考某些文档的多语言切换功能
+> 这是一种带后缀的实现方案，缺点是定制的逻辑较多的话，代码比较分散
 ```js
-index.vue
-index.cn.vue
-index.en.vue
+index.vue // 已有的英文版首页
+index.cn.vue //新创建的中文版首页
 ```
+
+
+样式
+文案
